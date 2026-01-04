@@ -1,0 +1,192 @@
+<?php
+require_once __DIR__ . '/../../include/initialize.php';
+
+$action = (isset($_GET['action']) && $_GET['action'] != '') ? $_GET['action'] : '';
+
+switch ($action) {
+    case 'add':
+        doInsert();
+        break;
+    case 'edit':
+        doEdit();
+        break;
+    case 'delete':
+        doDelete();
+        break;
+    case 'photos':
+        doupdateimage();
+        break;
+    case 'setBanner':
+        setBanner();
+        break;
+    case 'setDiscount':
+        setDiscount();
+        break;
+    case 'removeDiscount':
+        removeDiscount();
+        break;
+}
+
+function doInsert()
+{
+    if (!isset($_POST['save'])) {
+        return;
+    }
+
+    $errofile = $_FILES['image']['error'] ?? 0;
+    $type = $_FILES['image']['type'] ?? '';
+    $temp = $_FILES['image']['tmp_name'] ?? '';
+    $name = $_FILES['image']['name'] ?? '';
+    $location = 'uploaded_photos/' . $name;
+
+    if ($errofile > 0) {
+        message('No Image Selected!', 'error');
+        redirect('index.php?view=add');
+    }
+
+    if (!@getimagesize($temp) || $type === 'video/wmv') {
+        message('Uploaded file is not an image!', 'error');
+        redirect('index.php?view=add');
+    }
+
+    if (empty($_POST['PRODESC']) || empty($_POST['PROPRICE'])) {
+        message('All fields are required!', 'error');
+        redirect('index.php?view=add');
+    }
+
+    move_uploaded_file($temp, $location);
+
+    $product = new Product();
+    $product->OWNERNAME     = $_POST['OWNERNAME'] ?? '';
+    $product->OWNERPHONE    = $_POST['OWNERPHONE'] ?? '';
+    $product->INGREDIENTS   = $_POST['INGREDIENTS'] ?? '';
+    $product->IMAGES        = $location;
+    $product->PRODESC       = $_POST['PRODESC'];
+    $product->CATEGID       = $_POST['CATEGORY'] ?? null;
+    $product->PROQTY        = $_POST['PROQTY'] ?? 0;
+    $product->ORIGINALPRICE = $_POST['ORIGINALPRICE'] ?? 0;
+    $product->PROPRICE      = $_POST['PROPRICE'] ?? 0;
+    $product->PROSTATS      = 'Available';
+    $product->create();
+
+    $promo = new Promo();
+    $promo->PROID        = $product->PROID;
+    $promo->PRODISCOUNT  = $_POST['PRODISCOUNT'] ?? 0;
+    $promo->PRODISPRICE  = $_POST['PROPRICE'] ?? 0;
+    $promo->PROBANNER    = 0;
+    $promo->create();
+
+    message('New Product created successfully!', 'success');
+    redirect('index.php');
+}
+
+function doEdit()
+{
+    if (!isset($_POST['save'])) {
+        return;
+    }
+
+    $product = new Product();
+    $product->OWNERNAME     = $_POST['OWNERNAME'] ?? '';
+    $product->OWNERPHONE    = $_POST['OWNERPHONE'] ?? '';
+    $product->INGREDIENTS   = $_POST['INGREDIENTS'] ?? '';
+    $product->PRODESC       = $_POST['PRODESC'] ?? '';
+    $product->CATEGID       = $_POST['CATEGORY'] ?? null;
+    $product->PROQTY        = $_POST['PROQTY'] ?? 0;
+    $product->ORIGINALPRICE = $_POST['ORIGINALPRICE'] ?? 0;
+    $product->PROPRICE      = $_POST['PROPRICE'] ?? 0;
+    $product->update($_POST['PROID']);
+
+    message('Product has been updated!', 'success');
+    redirect('index.php');
+}
+
+function doDelete()
+{
+    if (!isset($_POST['selector'])) {
+        message('Select the records first before you delete!', 'error');
+        redirect('index.php');
+    }
+
+    $ids = $_POST['selector'];
+    foreach ($ids as $id) {
+        $product = new Product();
+        $product->delete($id);
+
+        $stockin = new StockIn();
+        $stockin->delete($id);
+
+        $promo = new Promo();
+        $promo->delete($id);
+    }
+
+    message('Product has been Deleted!', 'info');
+    redirect('index.php');
+}
+
+function doupdateimage()
+{
+    if (!isset($_FILES['photo']) || $_FILES['photo']['error'] > 0) {
+        message('No Image Selected!', 'error');
+        redirect('index.php');
+    }
+
+    $temp = $_FILES['photo']['tmp_name'];
+    $name = $_FILES['photo']['name'];
+    $location = 'uploaded_photos/' . $name;
+
+    if (!@getimagesize($temp)) {
+        message('Uploaded file is not an image!', 'error');
+        redirect('index.php');
+    }
+
+    move_uploaded_file($temp, $location);
+
+    $product = new Product();
+    $product->IMAGES = $location;
+    $product->update($_POST['proid']);
+
+    message('Image updated successfully!', 'success');
+    redirect('index.php');
+}
+
+function setBanner()
+{
+    $promo = new Promo();
+    $promo->PROBANNER = 1;
+    $promo->update($_POST['PROID']);
+}
+
+function setDiscount()
+{
+    if (!isset($_POST['submit'])) {
+        return;
+    }
+
+    $promo = new Promo();
+    $promo->PRODISCOUNT = $_POST['PRODISCOUNT'] ?? 0;
+    $promo->PRODISPRICE = $_POST['PRODISPRICE'] ?? 0;
+    $promo->PROBANNER   = 1;
+    $promo->update($_POST['PROID']);
+
+    msgBox('Discount has been set.');
+    redirect('index.php');
+}
+
+function removeDiscount()
+{
+    if (!isset($_POST['submit'])) {
+        return;
+    }
+
+    $promo = new Promo();
+    $promo->PRODISCOUNT = 0;
+    $promo->PRODISPRICE = 0;
+    $promo->PROBANNER   = 0;
+    $promo->update($_POST['PROID']);
+
+    msgBox('Discount removed.');
+    redirect('index.php');
+}
+
+?>
