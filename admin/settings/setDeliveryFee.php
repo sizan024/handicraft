@@ -38,12 +38,12 @@
                   <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
-                      "BRGY">Brgy:</label>
+                      "CITY">City:</label>
 
                       <div class="col-md-8">
                       <input  type="hidden" name="SETTINGID"  value="<?php echo $set->SETTINGID ?>">
-                             <input class="form-control input-sm" id="BRGY" name="BRGY" placeholder=
-                            "Location" type="text" value="<?php echo $set->BRGY ?>">
+                             <input class="form-control input-sm" id="CITY" name="CITY" placeholder=
+                            "Location" type="text" value="<?php echo $set->CITY ?>">
                       </div>
                     </div>
                   </div>
@@ -108,7 +108,7 @@
                    <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
-                      "BRGY">Brgy:</label>
+                      "BRGY">City:</label>
 
                       <div class="col-md-8">
                              <input class="form-control input-sm" id="BRGY" name="BRGY" placeholder=

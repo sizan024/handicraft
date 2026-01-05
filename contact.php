@@ -35,27 +35,26 @@
                     <div class="contact-info">
                         <h2 class="title text-center">Contact Info</h2>
                         <address>
-                            <p>E-Shopper Inc.</p>
-                            <p>935 W. Webster Ave New Streets Chicago, IL 60614, NY</p>
-                            <p>Newyork USA</p>
-                            <p>Mobile: +2346 17 38 93</p>
-                            <p>Fax: 1-714-252-0026</p>
-                            <p>Email: info@e-shopper.com</p>
+                            <p>Best Handicrafts </p>
+                            <p>Kathmandu,Nepal</p>
+                            <p>Kathmandu</p>
+                            <p>Mobile: +977 9765406759</p>
+                            <p>Email:handicraftsizan@gmail.com</p>
                         </address>
                         <div class="social-networks">
                             <h2 class="title text-center">Social Networking</h2>
                             <ul>
                                 <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="facebook"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="twitter"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <!-- <a href="#"><i class="google-plus"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                    <a href="#"><i class="youtube"></i></a> -->
                                 </li>
                             </ul>
                         </div>

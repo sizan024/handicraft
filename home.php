@@ -20,7 +20,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
                  
                 </div>
                 <div class="col-sm-6">
-                  <img src="images/home/handicraft1.png" class="girl img-responsive" alt="" />
+                  <img src="images/home/toys.jpg" class="girl img-responsive" alt="" />
                  
                 </div>
               </div>
@@ -34,7 +34,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
                  
                 </div>
                 <div class="col-sm-6">
-                  <img src="images/home/handicraft2.png" class="girl img-responsive" alt="" />
+                  <img src="images/home/easter_garland.jpg" class="girl img-responsive" alt="" />
                  
                 </div>
               </div>
@@ -49,7 +49,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
                  
                 </div>
                 <div class="col-sm-6">
-                  <img src="images/home/handicraft3.png" class="girl img-responsive" alt="" />
+                  <img src="images/home/header.jpg" class="girl img-responsive" alt="" />
                 </div>
               </div>
               

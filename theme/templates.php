@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-HandiCraft</title>
+    <title>Home |  Best HandiCraft</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -49,7 +49,7 @@ if (isset($_SESSION['gcCart'])){
           <div class="col-sm-6">
             <div class="contactinfo">
               <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-phone"></i> +977 9841091919</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i> +977 9765406759</a></li>
                 <li><a href="#"><i class="fa fa-envelope"></i> handicraftsizan@gmail.com</a></li>
               </ul>
             </div>
@@ -66,14 +66,14 @@ if (isset($_SESSION['gcCart'])){
       </div>
     </div><!--/header_top-->
     
-    <div class="header-middle"><!--header-middle-->
+    <!-- <div class="header-middle">
       <div class="container">
         <div class="row">
           <div class="col-md-4 clearfix">
             <div class="logo pull-left">
               <a href="<?php echo web_root?>"><img src="images/home/logo.png" alt="" /></a>
             </div> 
-          </div>
+          </div> -->
           <div class="col-md-8 clearfix">
             <div class="shop-menu clearfix pull-right">
               <ul class="nav navbar-nav">     
@@ -119,7 +119,7 @@ if (isset($_SESSION['gcCart'])){
 
          
                 <li><a href="<?php web_root?>index.php?q=product">Products</a></li>
-                <li><a href="<?php web_root?>index.php?q=contact">Contact</a></li>
+                <!-- <li><a href="<?php web_root?>index.php?q=contact">Contact</a></li> -->
               </ul>
             </div>
           </div>
@@ -154,52 +154,52 @@ if (isset($_SESSION['gcCart'])){
         <div class="row">
           <div class="col-sm-2">
             <div class="companyinfo">
-              <h2><span>e</span>-shopper</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+              <h2><span></span>Best Handicrafts</h2>
+              <p></p>
             </div>
           </div>
-          <div class="col-sm-7">
+          <!-- <div class="col-sm-7">
             <div class="col-sm-6">
               <div class="video-gallery text-center">
                 <a href="#"> 
                     <iframe class="iframe-img"  src="https://www.youtube.com/embed/d8N21Q_UN4w"   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                 </a> 
               </div>
-            </div>
+            </div> -->
             
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6">
               <div class="video-gallery text-center">
                 <a href="#"> 
                    <iframe  class="iframe-img"  src="https://www.youtube.com/embed/aMDC3Da4KIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                 </a> 
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="col-sm-3">
             <div class="address">
               <img src="images/home/map.png" alt="" />
-              <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+              <p></p>
             </div>
           </div>
         </div>
       </div>
     </div>
     
-    <div class="footer-widget">
+    <!-- <div class="footer-widget">
       <div class="container">
         <p>You can modify this section using your own personal information</p>
         <div class="row">
           <div class="col-sm-3">
             <div class="single-widget">
-              <h2>Service</h2>
-              <ul class="nav nav-pills nav-stacked">
+              <h2>Service</h2> -->
+              <!-- <ul class="nav nav-pills nav-stacked">
                 <li><a href="#">Online Help</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Order Status</a></li>
                 <li><a href="#">Change Location</a></li>
                 <li><a href="#">FAQ’s</a></li>
-              </ul>
-            </div>
+              </ul> -->
+            <!-- </div>
           </div>
           <div class="col-sm-3">
             <div class="single-widget">
@@ -214,20 +214,20 @@ if (isset($_SESSION['gcCart'])){
                   ?>
               </ul>
             </div>
-          </div>
-          <div class="col-sm-3">
+          </div> -->
+          <!-- <div class="col-sm-3">
             <div class="single-widget">
               <h2>Policies</h2>
               <ul class="nav nav-pills nav-stacked">
                 <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privecy Policy</a></li>
-                <li><a href="https://youtu.be/9hcCHTwW3HA">HR Record System</a></li>
-                <li><a href="https://youtu.be/aMDC3Da4KIA">Point of Sales</a></li>
-                <li><a href="https://youtu.be/d8N21Q_UN4w">Resevation System</a></li>
+                <li><a href="#">Privecy Policy</a></li> -->
+                <!-- <li><a href="https://youtu.be/9hcCHTwW3HA">HR Record System</a></li> -->
+                <!-- <li><a href="https://youtu.be/aMDC3Da4KIA">Point of Sales</a></li> -->
+                <!-- <li><a href="https://youtu.be/d8N21Q_UN4w">Resevation System</a></li> -->
               </ul>
             </div>
           </div>
-          <div class="col-sm-3">
+          <!-- <div class="col-sm-3">
             <div class="single-widget">
               <h2>About Shopper</h2>
               <ul class="nav nav-pills nav-stacked">
@@ -238,21 +238,21 @@ if (isset($_SESSION['gcCart'])){
                 <li><a href="#">Copyright</a></li>
               </ul>
             </div>
-          </div>
+          </div> -->
       
           
         </div>
       </div>
     </div>
     
-    <div class="footer-bottom">
+    <!-- <div class="footer-bottom">
       <div class="container">
         <div class="row">
-          <p class="pull-left">Modified by <span><a href="https://bit.ly/2LPn9Wu">Janobe Source Code</a></span></p>
-          <p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+          <p class="pull-left"> <span><a href="https://bit.ly/2LPn9Wu">Janobe Source Code</a></span></p>
+          <p class="pull-right"> <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
         </div>
       </div>
-    </div>
+    </div> -->
     
   </footer><!--/Footer-->
 

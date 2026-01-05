@@ -43,7 +43,7 @@
 
 <div class="panel">  
 <div class="panel-header">
-  <h2>Tracking Order <SMALL><a href="<?php echo web_root; ?>index.php?q=profile" class="btn btn-sm btn-primary"><i class="fa  fa-chevron-left"></i> Back</a></SMALL></h2>
+  <h2>Tracking Order <SMALL><a href="<?php echo web_root; ?>index.php?q=profile" class="btn btn-sm btn-primary"><i class=" chevron-left"></i> Back</a></SMALL></h2>
 </div>          
   <div class="panel-body">
 
@@ -74,9 +74,9 @@
 
                               <td align=""><h1><span class="label label-danger">0</span></h1></td>
                               <td><h1 style="color:blue">------------</h1></td>
-                              <td><h1><span ><i class="fa fa-plane"></i></i></span></h1></td>
+                              <td><h1><span ><i class="plane"></i></i></span></h1></td>
                                <td><h1 style="color:skyblue">------------</h1></td>
-                              <td><label><h1><i class="fa fa-truck"></i></i></h1></label></td>
+                              <td><label><h1><i class="truck"></i></i></h1></label></td>
                           </tr>
                            
 
@@ -87,9 +87,9 @@
                          <tr>   
                               <td align=""><h1><span  class="label label-danger">0</span></h1></td>
                               <td><h1 style="color:blue">------------</h1></td>
-                              <td><h1><span class="label label-danger" ><i class="fa fa-plane"></i></i></span></h1></td>
+                              <td><h1><span class="label label-danger" ><i class="-plane"></i></i></span></h1></td>
                                <td><h1 style="color:blue">------------</h1></td>
-                              <td><label><h1><i class="fa fa-truck"></i></i></h1></label></td>
+                              <td><label><h1><i class="truck"></i></i></h1></label></td>
                           </tr>
                      <?php 
                      }elseif($result->ORDEREDSTATS=='Delivered'){
@@ -97,9 +97,9 @@
                          <tr>   
                               <td align=""><h1><span  class="label label-danger">0</span></h1></td>
                               <td><h1 style="color:blue">------------</h1></td>
-                              <td><h1><span class="label label-danger" ><i class="fa fa-plane"></i></i></span></h1></td>
+                              <td><h1><span class="label label-danger" ><i class="plane"></i></i></span></h1></td>
                                <td><h1 style="color:blue">------------</h1></td>
-                              <td><label><h1><span  class="label label-danger"><i class="fa fa-truck"></i></i></span></h1></label></td>
+                              <td><label><h1><span  class="label label-danger"><i class="-truck"></i></i></span></h1></label></td>
                           </tr>
                      <?php 
                          }else{
@@ -107,11 +107,11 @@
                              <tr>   
                               <td align=""><h1><span  class="label label-default">0</span></h1></td>
                               <td><h1 style="color:skyblue">------------</h1></td>
-                              <td><h1><span class="label label-default" ><i class="fa fa-plane"></i></i></span></h1></td>
+                              <td><h1><span class="label label-default" ><i class="plane"></i></i></span></h1></td>
                                <td><h1 style="color:skyblue">------------</h1></td>
-                              <td><label><h1><span  class="label label-default"><i class="fa fa-truck"></i></i></span></h1></label></td>
+                              <td><label><h1><span  class="label label-default"><i class="truck"></i></i></span></h1></label></td>
                           </tr>
-                          <tr><td colspan="5" align="center" ><h1><span class="label label-danger"><i class="fa fa-times-circle"></i></span></h1></td></tr>
+                          <tr><td colspan="5" align="center" ><h1><span class="label label-danger"><i class="times-circle"></i></span></h1></td></tr>
                      <?php    }
                         } 
                         ?>

@@ -33,7 +33,7 @@
                         <input type="hidden" name="PROID" value="<?php  echo $result->PROID; ?>">
                        <button  type="submit"  class="btn btn-primary btn-sm"  name="btnorder">Order Now!</button>
                          <a href="<?php echo web_root ; ?>customer/controller.php?action=wishlist&wishid=<?php echo $result->WISHID; ?>"    class="btn btn-info btn-sm "  data-toggle="lightbox"  >
-                                 <i class="fa fa-trash-o fa-fw"  data-toggle="tooltip" data-placement="left" title="Remove"></i>  
+                                 <i class="trash"  data-toggle="tooltip" data-placement="left" title="Remove"></i>  
                                  </a>
                              
                           </td>

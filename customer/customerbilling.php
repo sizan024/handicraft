@@ -94,9 +94,9 @@ $query = "SELECT * FROM `tblsummary` s ,`tblcustomer` c
 
         </div>
         <div class="col-md-6 pull-right">
-          <p align="right">Total Price : &#8369 <?php echo number_format($tot,2);?></p>
-          <p align="right">Delivery Fee : &#8369 <?php echo number_format($price,2); ?></p>
-          <p align="right">Overall Price : &#8369 <?php echo number_format($cur->PAYMENT,2); ?></p>
+          <p align="right">Total Price : Rs. <?php echo number_format($tot,2);?></p>
+          <p align="right">Delivery Fee : Rs. <?php echo number_format($price,2); ?></p>
+          <p align="right">Overall Price : Rs. <?php echo number_format($cur->PAYMENT,2); ?></p>
         </div>
       </div>
      

@@ -70,7 +70,6 @@
 
                        </div>
                         <div class="panel-footer">
-                             <p align="left">&copy; <a href="https://bit.ly/2LPn9Wu">Janobe Source Code</a></p>
                         </div>
                     </div> 
                   </div>
