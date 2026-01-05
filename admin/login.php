@@ -11,7 +11,7 @@ require_once("../include/initialize.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login | Janobe </title>
+	<title>Login  </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -44,7 +44,7 @@ require_once("../include/initialize.php");
 					</div>
 
 					<span class="login100-form-title p-t-20 p-b-45">
-						Janobe Source Code
+						
 					</span>
 
 				 	<?php echo check_message(); ?>

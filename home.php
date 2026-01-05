@@ -12,7 +12,7 @@
             <div class="carousel-inner">
               <div class="item active">
                 <div class="col-sm-6">
-                  <h1><span>E</span>-HandiCraft</h1>
+                  <h1><span></span>Best HandiCraft</h1>
                   <h2>A Platform to support Handicrafts</h2>
                   <p>Each product reflects the craftsmanship, patience, and artistic skills of local makers.
 The platform helps preserve traditional art forms by promoting them to a global audience.
@@ -26,7 +26,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
               </div>
               <div class="item">
                 <div class="col-sm-6">
-                  <h1><span>E</span>-HandiCraft</h1>
+                  <h1><span></span>Best HandiCraft</h1>
                   <h2>100% Quality based Products</h2>
                   <p>Each product reflects the craftsmanship, patience, and artistic skills of local makers.
 The platform helps preserve traditional art forms by promoting them to a global audience.
@@ -41,7 +41,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
               
               <div class="item">
                 <div class="col-sm-6">
-                  <h1><span>E</span>-HandiCraft</h1>
+                  <h1><span></span>Best HandiCraft</h1>
                   <h2>100% Quality based Products</h2>
                   <p>Each product reflects the craftsmanship, patience, and artistic skills of local makers.
 The platform helps preserve traditional art forms by promoting them to a global audience.
@@ -99,13 +99,13 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
                 <div class="single-products">
                     <div class="productinfo text-center">
                       <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                      <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+                      <h2>Rs <?php  echo $result->PRODISPRICE; ?></h2>
                       <p><?php  echo    $result->PRODESC; ?></p>
                       <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
                     </div>
                     <div class="product-overlay">
                       <div class="overlay-content">
-                        <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+                        <h2>Rs <?php  echo $result->PRODISPRICE; ?></h2>
                         <p><?php  echo    $result->PRODESC; ?></p>
                        <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
                       </div>
@@ -160,7 +160,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
                       <div class="single-products">
                         <div class="productinfo text-center">
                           <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                          <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+                          <h2>Rs <?php  echo $result->PRODISPRICE; ?></h2>
                           <p><?php  echo    $result->PRODESC; ?></p>
                            <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
                         </div>
@@ -190,7 +190,7 @@ Customers can explore authentic handmade goods that are not mass-produced. </p>
                       <div class="single-products">
                         <div class="productinfo text-center">
                           <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                          <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+                          <h2>Rs <?php  echo $result->PRODISPRICE; ?></h2>
                           <p><?php  echo    $result->PRODESC; ?></p>
                            <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
                         </div>
